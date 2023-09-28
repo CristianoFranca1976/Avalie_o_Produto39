@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deixe seu Comentario</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" href="assets/LetraC.png" type="imagem" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="produto">
+        <a href="index.html" target="_self">
+          <img id="return" src="assets/return.svg" alt="Retornno" />
+        </a>
+        <img id="imagem" src="assets/Image.png" alt="relogio" />
+      </div>
+      <div id="content">
+        <div id="Comment">
+          <div id="title">
+            <p id="text1">Deixe um comentário</p>
+            <p id="text2">Conte sobre o motivo da sua avaliação</p>
+          </div>
+
+          <div id="TextArea">
+            <textarea
+              style="resize: none"
+              name="Comentario"
+              id="input"
+              placeholder="Escreva aqui seu comentário"
+            ></textarea>
+          </div>
+        </div>
+        <div id="Button">
+          <p id="Enviar">Enviar</p>
+          <button
+            type="button"
+            onclick="document.getElementById('enviado').style.display='flex'"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="enviado" style="display: none">
+      <div id="CentralMensage">
+        <button type="reset" onclick="resetPagina()">
+          <img src="assets/fechar.jpg" alt="" />
+        </button>
+        <p>Obrigado</p>
+        <p>pelo seu feedback!</p>
+        <img src="./assets/happy.png" alt="" />
+      </div>
+    </div>
+    <script src="JavaScript1.js"></script>
+  </body>
+</html>
